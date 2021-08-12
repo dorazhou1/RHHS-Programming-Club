@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us | RHHS Programming Club</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="imports/parallax.js-1.5.0/parallax.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/about.js"></script>
+        <script type="text/javascript" src="scripts/navbar.js"></script>
+    </head>
+    <body onload='slideIn("top")'>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle menubtn" data-toggle="collapse" data-target="#myNavbar">
+                    <img src="images/menuicon.png" alt="Open Menu" width="30px">
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="padding: 5px;">
+                    <img src="images/whitelogo.png" class="navlogo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="competitions.html">COMPETITIONS</a></li>
+                        <li><a href="calendar.html">CALENDAR</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="home parallax" data-parallax="scroll" data-image-src="images/gradients/aboutblob.png" id="home">
+            <div id="top" style="visibility: hidden">
+                <h1 class="title white center">About Us</h1>
+            </div>
+        </div>
+        <!--"our goals"-->
+        <div class="section whitebackground" id="ourGoals">
+            <h1>Our Goal</h1>
+            <h4>To promote interest in all areas of computer science at River Hill.</h4>
+        </div>
+        <div id="clubhistory" class="section " style="display: inline-block">
+            <h1 class="white">2021-2022 Important Dates</h1>
+            <section class="cd-horizontal-timeline" style="float:left">
+                <div class="timeline">
+                    <div class="events-wrapper">
+                        <div class="events">
+                            <ol>
+                                <li><a href="#0" data-date="17/09/2021" class="selected white">17 Sep</a></li>
+                                <li><a href="#0" data-date="24/09/2021" class="white">24 Sep</a></li>
+                                <li><a href="#0" data-date="08/10/2021" class="white">08 Oct</a></li>
+                                <li><a href="#0" data-date="22/10/2021" class="white">22 Oct</a></li>
+                                <li><a href="#0" data-date="17/12/2021" class="white">17 Dec</a></li>
+                                <li><a href="#0" data-date="06/01/2022" class="white">06 Jan</a></li>
+                                <li><a href="#0" data-date="21/01/2022" class="white">21 Jan</a></li>
+                                <li><a href="#0" data-date="25/02/2022" class="white">25 Feb</a></li>
+                                <li><a href="#0" data-date="25/03/2022" class="white">25 Mar</a></li>
+                                <li><a href="#0" data-date="26/05/2022" class="white">26 May</a></li>
+                            </ol>
+                            <span class="filling-line" aria-hidden="true"></span>
+                        </div>
+                        <!-- .events -->
+                    </div>
+                    <!-- .events-wrapper -->
+                    <ul class="cd-timeline-navigation">
+                        <li><a href="#0" class="prev inactive">Prev</a></li>
+                        <li><a href="#0" class="next">Next</a></li>
+                    </ul>
+                    <!-- .cd-timeline-navigation -->
+                </div>
+                <!-- .timeline -->
+                <div class="events-content">
+                    <ol>
+                        <li class="selected" data-date="16/07/2021">
+                            <h2 class="time">Interest Meeting</h2>
+                            <em>September 17, 2021</em>
+                            <p class="time">	
+                                Come join us for our interest meeting in Room 245 to learn more about what we do and to meet our officers. We look forward to seeing you there!
+                            </p>
+                        </li>
+                        <li data-date="24/09/2021">
+                            <h2 class="time">Intro to Java and C++</h2>
+                            <em>September 24, 2021</em>
+                            <p class="time">	
+                                We will be starting 4-week intro to Java and intro to C++ workshops for members who want to learn competitive programming or are just willing to start learning a new language!
+                            </p>
+                        </li>
+                        <li data-date="08/10/2021">
+                            <h2 class="time">Web Development Workshop</h2>
+                            <em>October 8, 2021</em>
+                            <p class="time">	
+                                For those interested in our web development projects, we will be teaching the basics to web development including HTML, CSS, Javascript, and Git.
+                            </p>
+                        </li>
+                        <li data-date="22/10/2021">
+                            <h2 class="time">USACO Training</h2>
+                            <em>October 22, 2021</em>
+                            <p class="time">	
+                                Over the course of the next few months, we will help guide members who want to participate in USACO. Training will be split for Bronze and Silver levels and we'll cover algorithms and practice problems to help you succeed in USACO.
+                            </p>
+                        </li>
+                        <li data-date="17/12/2021">
+                            <h2 class="time">December USACO</h2>
+                            <em>December 17, 2021</em>
+                            <p class="time">	
+                                First USACO competition of the season!! This is a chance to test your programming skills and use everything you've learned. It's only the first competition, so don't worry if you don't make it to the next division, there are still 3 more chances for you this year. To learn more about USACO and competitive programming, click <a href="competitions.html">here</a>. Good luck!
+                            </p>
+                        </li>
+                        <li data-date="06/01/2022">
+                            <h2 class="time">Website Project</h2>
+                            <em>January 6, 2022</em>
+                            <p class="time">	
+                                We will be starting a new website for a club/organization (TBD). This is an opportunity for you to use the skills you learned in web development in the real world!
+                            </p>
+                        </li>
+                        <li data-date="21/01/2022">
+                            <h2 class="time">January 21, 2022</h2>
+                            <em>January 21, 2022</em>
+                            <p class="time">	
+                                Second USACO competition of the school year. We encourage you to participate to see if you have improved from last December! To learn more about USACO and competitive programming, click <a href="competitions.html">here</a>.
+                            </p>
+                        </li>
+                        <li data-date="25/02/2022">
+                            <h2 class="time">February USACO</h2>
+                            <em>February 25, 2022</em>
+                            <p class="time">	
+                                Third USACO competition of the school year. We encourage you to participate to see if you have improved from last month! To learn more about USACO and competitive programming, click <a href="competitions.html">here</a>.
+                            </p>
+                        </li>
+                        <li data-date="25/03/2022">
+                            <h2 class="time">USACO Open</h2>
+                            <em>March 25, 2022</em>
+                            <p class="time">	
+                                Last and final USACO competition of the school year, usually the most difficult problems are in this test. We encourage you to participate to see if you have improved from last December! To learn more about USACO and competitive programming, click <a href="competitions.html">here</a>.
+                            </p>
+                        </li>
+                        <li data-date="26/05/2022">
+                            <h2 class="time">Club Elections</h2>
+                            <em>May 26, 2022</em>
+                            <p class="time">	
+                                We will be electing the officers for the 2022-2023 school year!
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <!-- .events-content -->
+            </section>
+        </div>
+        <div class="TeamDescription whitebackground section">
+            <h1 class="team"> Team </h1>
+            <p class="team">Our club has five officers who each play an essential role in running the club. Our members who are part of the club projects team also made important contributions to the club and this website. </p>
+        </div>
+        <div class="officers section">
+            <h2 class="subtitles white">Officers</h2>
+            <div class="column1">
+                <img class = "portrait1" src = "images/NoPicture.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="officer"> Simon Hu&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">President</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription white">Simon Hu is the senior at River Hill and has been a member of the club since his freshman year. Simon started programming in High School and has since learned Python, Java, Javascript, HTML, CSS and react. In his free time, Simon enjoys going on Tik Tok. He also likes to watch movies and TV shows. In particular, Simon enjoys watching Marvel movies. His favorite superhero is Wanda Maximoff. Simon’s favorite TV show is Agents of Shield. Outside of school Simon is a competitive swimmer. Simon has been swimming since he was eight years old. He hopes to get a scholarship for swimming and swim varsity in college.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/RayhanZirvi.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="officer"> Rayhan Zirvi&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">VP of Competitive Programming</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon" href="https://www.linkedin.com/in/rayhanzirvi/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon" href="https://github.com/rzirvi1665" target="_blank">            
+                        </a>
+                        <a href="https://codeforces.com/profile/rzirvi13" target="_blank" height=12px>
+                            <div class="cflogo"></div>
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2 white">Rayhan Zirvi is a junior at River Hill who is passionate about computer science. He joined the club in his freshman year and has since participated in several programming competitions. He likes to learn about new programming algorithms, and teach these algorithms to others. He is proficient in programming languages C++, Java, and Python. In addition, he enjoys machine learning, particularly programming neural network models in Python, and applying the field to real-life scenarios. In his free time, he competes on Codeforces, plays travel/AAU basketball, and plays golf. "He is a CF legend and better than everyone at CP," says Dora. </h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/DoraZhou.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="officer"> Dora Zhou&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">VP of Projects</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon" href="https://github.com/dorazhou1" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon" href="https://www.linkedin.com/" target="_blank">            
+                        </a>
+                        <a href="https://codeforces.com/profile/t.stark" target="_blank" height=12px>
+                            <div class="cflogo"></div>
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription white">Dora Zhou is a junior at River Hill who joined programming club in her sophomore year. She first started coding in middle school and since then she has learned Java, C++, HTML/CSS and a little bit of Python. As VP of Projects, she researches and coordinates club-wide projects that members can contribute to, such as this website. In her free time, Dora enjoys watching Marvel movies and shows and her favorite superhero is Iron Man.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/DavidChen.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="officer"> David Chen&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">VP</h5>
+                        <a class="GitHub fab fa-github icon" href="https://github.com/dchen9247" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2 white">David Chen is a senior, who has been a member of the RHHS Programming Club since his freshman year. He is one of the vice presidents of the club this year, and this will be his second year as a mentor. David first learned programming from web development seminars in middle school, but he has since studied programming for robotics and UI/UX design. As Chief Software Engineer, David led his robotics team to the semifinals of the Chesapeake District Robotics Event in Bethesda, MD. David specializes in Java and JavaScript, but he has also studied Python. In his free time, David enjoys watching basketball, playing video games, and playing chess.</h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/NoPicture.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="officer"> Sheryl Li&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Secretary</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription white">Sheryl Li is a sophomore at River Hill and joined programming club last year.</h4>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br>
+        <div class="developers whitebackground section">
+            <h2 class="subtitles">Website Developers</h2>
+            <div class="column1">
+                <img class = "portrait1" src = "images/DoraZhou.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="developer"> Dora Zhou&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Project Leader</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://github.com/dorazhou1" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://www.linkedin.com/" target="_blank">            
+                        </a>
+                        <a href="https://codeforces.com/profile/t.stark" target="_blank" height=12px>
+                            <div class="cflogodark"></div>
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription">Dora Zhou created the general UI design and coded the home page, contact page, and parts of the competitions page along with William Zhong. She also helped put together the website, set up the git repository on Github, and find a host and domain.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/NoPicture.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="developer"> Simon Hu&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Project Leader</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2">Simon Hu coordinated the project and created the outline for the website content and pages. </h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/NoPicture.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="developer"> Sheryl Li&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Web Developer</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription">Sheryl Li helped design the website and code the About page.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/NathanLui.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="developer"> Nathan Lui&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Website Developer</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2">Nathan Lui, along with Ben Glaros, helped to code "Team" portion of the About page. </h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/BenGlaros.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="developer"> Ben Glaros&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Web Developer</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription">Ben Glaros worked with Nathan Lui to code the "Team" portion of the About page.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/DavidChen.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="developer"> David Chen&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Website Developer</h5>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/dchen9247" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2">David Chen designed and coded the Calendar page of this website using Google Calendar and fullcalendar.io. </h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/WilliamZhong.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="developer"> William Zhong&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Content Contributor</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/" target="_blank">            
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription">William Zhong contributed to the content of the Resources section on the Competitions page.</h4>
+                </div>
+            </div>
+            <div class="column2">
+                <img class = "portrait2" src = "images/RayhanZirvi.jpg">
+                <div class="description2">
+                    <h3 class="names"><mark class="developer"> Rayhan Zirvi&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Content Contributor</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/in/rayhanzirvi/" target="_blank">
+                        </a>
+                        <a class="GitHub fab fa-github icon icondark" href="https://github.com/rzirvi1665" target="_blank">            
+                        </a>
+                        <a href="https://codeforces.com/profile/rzirvi13" target="_blank" height=12px>
+                            <div class="cflogodark"></div>
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription descrip2">Rayhan Zirvi contributed to the content of the USACO section of the Competitions page.</h4>
+                </div>
+            </div>
+            <div class="column1">
+                <img class = "portrait1" src = "images/NoPicture.jpg">
+                <div class="description1">
+                    <h3 class="names"><mark class="developer"> Shaunak Marathe&nbsp;</mark></h3>
+                    <div class="logos">
+                        <h5 class="position">Content Contributor</h5>
+                        <a class="LinkedinLogo fab fa-linkedin icon icondark" href="https://www.linkedin.com/in/shaunak-marathe-08a5a91b1/" target="_blank">
+                        </a>
+                    </div>
+                    <h4 class="PersonDescription">Shaunak contributed to the some of the content in the About page. </h4>
+                </div>
+            </div>
+        </div>
+        <!-- Blob shapes -->
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="myClip1">
+                    <path fill="#0066CC" d="M61.7,-37.1C74.7,-13.1,76.4,16,64.2,35.7C52,55.4,26,65.8,1,65.2C-23.9,64.6,-47.9,53.1,-59.5,33.6C-71.2,14.2,-70.5,-13.1,-58.6,-36.4C-46.6,-59.8,-23.3,-79.3,0.5,-79.6C24.3,-79.9,48.7,-61,61.7,-37.1Z" transform="translate(70 90) scale(1)"  />
+                </clipPath>
+            </defs>
+        </svg>
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="myClip2">
+                    <path fill="#0066CC" d="M60.7,-36.8C72.2,-15.2,70.4,12.2,58.1,35.8C45.7,59.5,22.9,79.3,2.2,78.1C-18.5,76.8,-37,54.4,-49.3,30.8C-61.6,7.2,-67.6,-17.6,-58.3,-37.9C-49.1,-58.2,-24.5,-73.9,0,-74C24.6,-74,49.3,-58.3,60.7,-36.8Z" transform="translate(70 90) scale(1)"  />
+                </clipPath>
+            </defs>
+        </svg>
+        <!--Footer-->
+        <div class="footer">
+            <div class="columns">
+                <div class="col1">
+                    <a href="index.html#home"><img src="images/whitelogo.png" class="footerlogo"></a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Navigation</h5>
+                    <a href="index.html" class="footer">Home</a> <br>
+                    <a href="about.html" class="footer">About</a> <br>
+                    <a href="competitions.html" class="footer">Competitions</a> <br>
+                    <a href="calendar.html" class="footer">Calendar</a> <br>
+                    <a href="contact.html" class="footer">Contact Us</a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Contact</h5>
+                    <p class="footer">Room 245 (Mr. Boothe)</p>
+                    <p class="footer">(301) 500 - 7370</p>
+                    <p class="footer"></p>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/rhhsprogramming/" class="fab fa-instagram" id="icon" target="_blank"></a>
+                        <a href="https://www.discord.com/" class="fab fa-discord" id="icon" target="_blank"></a>
+                        <a href="mailto:rhhsprogrammingclub@gmail.com" class="fas fa-envelope-square" id="icon" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">&copy; 2021 RHHS Programming Club</p>
+                <a href="credits.html" class="credits">Code and Design Credits</a>
+            </div>
+        </div>
+    </body>
+</html>

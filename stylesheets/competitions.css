@@ -1,0 +1,215 @@
+/*General*/
+
+p {
+    font-size: 18px;
+}
+
+/*INTRO*/
+
+p.intro {
+    padding: 2vh 0;
+}
+div.left {
+    float: left;
+    width: 50%;
+}
+div.right {
+    float: left;
+    width: 50%;
+}
+.video {
+    width: 37vw;
+    height: 21vw;
+    margin-top: calc(300px - 20vw);
+}
+
+/*AWARDS*/
+div.awards{
+    float: left;
+    width:100%;
+    padding: 5vh max(10vw, calc(50vw - 450px));
+    background: radial-gradient(107.79% 172.27% at 96.25% 37.39%, #B5179E 0%, rgba(67, 97, 238, 0) 100%);
+    text-align: center;
+}
+div.numbers {
+    font: 800 40px Playfair Display;
+    float: left;
+    width: 100%;
+}
+div.nums, div.labels {
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+}
+div.labels {
+    text-align: center;
+    font-size: 20px;
+}
+div.num, p.label{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    color: white;
+}
+p.label {
+    margin-top: 10px;
+    font-weight: 100;
+}
+hr {
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+    border-top: 3px solid white;
+}
+div.list {
+    display: inline-block;
+}
+p.list {
+    text-align: left;
+}
+/*BENEFITS*/
+div#benefits {
+    text-align: center;
+}
+ul.benefits {
+    width: 80%;
+    display: inline-block;
+    padding-top: 20px;
+}
+h2.benefits {
+    margin: 0 2vw;
+}
+/*USACO*/
+div#usaco {
+    float: left;
+    width:100%;
+    padding: 5vh max(10vw, calc(50vw - 450px));
+    background: radial-gradient(99.56% 136.54% at 4.09% 40.16%, #4361EE 0%, rgba(58, 12, 163, 0) 100%);
+    text-align: right;
+}
+h2.usaco {
+    margin-right: 0;
+    display: inline-block;
+}
+.video2 {
+    margin: 20px;
+}
+/*RESOURCES*/
+div.col {
+    width: 33%;
+    float: left;
+}
+h2.col {
+    margin: 3vh auto 0;
+}
+.btn {
+    width: 80%;
+    margin: 10%;
+}
+button.usaco {
+    min-width: 160px;
+}
+button.usacoguide {
+    min-width: 180px;
+}
+button.forum {
+    min-width: 180px;
+}
+button.usaco:hover:before {content:"USACO.org \2192"}
+button.usacoguide:hover:before {content:"USACO.guide \2192"}
+button.forum:hover:before {content:"USACO reddit \2192"}
+p.col {
+    color: #3A0CA3;
+    padding: 0 2vw;
+}
+a, a:hover {
+    color: #4361EE;
+}
+/*collapse*/
+.collapsible {
+  background-color: #fff;
+  color: #3A0CA3;
+    font-family: Raleway;
+  border: none;
+    border-bottom: 2px solid #eee;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+    transition: 1s;
+}
+
+.active {
+  background-color: #eed8fd;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #7209B7;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+p.description {
+    padding-top: 10px;
+    text-align: left;
+}
+.other {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    div.cols {
+        padding: 0 20px;
+    }
+    div.col {
+        width: 100%;
+    }
+    .btn {
+        margin: 2%;
+    }
+    .btn-container {
+        padding: 0;
+    }
+    div.introtext, div.vid, .video {
+        width: 100%;
+        float: left;
+        margin-top: 0;
+    }
+    .video {
+        height: 44vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .video2 {
+        width: 100%;
+    }
+    div.num, p.label{
+        width: 100%;        
+    }
+    p.label {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    div.labels, div.nums {
+        width: 49%;
+        float: left;
+        text-align: center;
+    }
+}

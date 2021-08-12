@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Competitions | RHHS Programming Club</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/competitions.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="imports/parallax.js-1.5.0/parallax.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/competitions.js"></script>
+        <script type="text/javascript" src="scripts/navbar.js"></script>
+    </head>
+    <body onload='slideIn("top")'>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle menubtn" data-toggle="collapse" data-target="#myNavbar">
+                    <img src="images/menuicon.png" alt="Open Menu" width="30px">
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="padding: 5px;">
+                    <img src="images/whitelogo.png" class="navlogo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="competitions.html">COMPETITIONS</a></li>
+                        <li><a href="calendar.html">CALENDAR</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header-->
+        <div class="home parallax" data-parallax="scroll" data-image-src="images/gradients/competitionsblob.png" id="home">
+            <div id="top">
+                <h1 class="title center">Competitions</h1>
+            </div>
+        </div>
+        <div class="whitebackground fleft section " id="intro">
+            <div class="left introtext">
+                <h2 class="purple">What is Competitive Programming?</h2>
+                <p class="intro">Competitive programming (CP for short) involves the application of programming knowledge and algorithms to solve very specific problems. CP is a great way to develop intuition and problem-solving skills that may prove useful down the road.</p>
+            </div>
+            <div class="right vid">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ueNT-w7Oluw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="awards">
+            <h2 class="white">Awards</h2>
+            <div class="numbers" id="numbers">
+                <div class="nums">
+                    <div id="value" class="num">800</div>
+                    <div id="value2" class="num">15</div>
+                    <div id="value3" class="num">9</div>
+                </div>
+                <div class="labels">
+                    <p class="label">
+                        total dollars won
+                    </p>
+                    <p class="label">
+                        competitions
+                    </p>
+                    <p class="label">
+                        awards
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="list">
+                <p class="list white">&#129353; University of Maryland HSPC: 3rd place</p>
+                <p class="list white">&#129352; Philadelphia Classic: 2nd place</p>
+                <p class="list white">&#129351; Colorado School of Mines HSPC: 1st and 3rd place</p>
+                <p class="list white">🏅 Montgomery Blaire Informatics Tournament: 4th place</p>
+                <p class="list white">🏅 Florida HS Programming Series: 5th place</p>
+            </div>
+        </div>
+        <div class="whitebackground fleft section" id="benefits">
+            <h2 class="purple benefits ">Benefits of Competitive Programming</h2>
+            <ul class="purple benefits">
+                <li>
+                    <p class="left">Fulfilling when you finally solve the problem
+                        Interesting algorithms
+                    </p>
+                </li>
+                <li>
+                    <p class="left">Great resume booster</p>
+                </li>
+                <li>
+                    <p class="left">Well-prepared for tech interviews at top companies (Google, Facebook, Amazon, etc)</p>
+                </li>
+                <li>
+                    <p class="left">Fun collaborating at programming competitions</p>
+                </li>
+            </ul>
+        </div>
+        <div id="usaco" class="fleft">
+            <h2 class="white usaco" >What is USACO?</h2>
+            <br><br>
+            <p class="white" style="display: inline">USACO (United States of America Computing Olympiad) is the most prestigious and well-known programming competition for high school students. All students begin in the Bronze division and work there way up to Silver, Gold, and Platinum divisions. </p>
+            <iframe class="video2" width="375vw" height="210vw" align="left" src="https://www.youtube.com/embed/UF2Eu4ZK_qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="white" style="display: inline">There are 4 annual contests (December, January, February, US Open) where students have a chance to be promoted to the next division. The contest format is usually 3 problems in 4 hours. Each problem has a certain number of test cases that if passed, contribute to your overall score out of 1000.</p>
+        </div>
+        <div id="resources" class="fleft whitebackground section">
+            <div class="cols">
+                <div class="col">
+                    <h2 class="purple col">Register</h2>
+                    <div class="btn-container">
+                        <div class="btn-center" style="width:100%;">
+                            <a href="http://usaco.org/" target="_blank"><button type="button" class="btn usaco"><span class="button">USACO.org </span></button></a>
+                        </div>
+                    </div>
+                    <p class="purple col">Create an account to get access to USACO competitions and past problems.</p>
+                </div>
+                <div class="col">
+                    <h2 class="purple col">Practice</h2>
+                    <div class="btn-container">
+                        <div class="btn-center" style="width:100%;">
+                            <a href="https://usaco.guide/" target="_blank"><button type="button" class="btn usacoguide"><span class="button">USACO.guide </span></button></a>
+                        </div>
+                    </div>
+                    <p class="purple col">The best free online resource for USACO prep, written by IOI finalists.</p>
+                </div>
+                <div class="col">
+                    <h2 class="purple col">Forum</h2>
+                    <div class="btn-container">
+                        <div class="btn-center" style="width:100%;">
+                            <a href="https://www.reddit.com/r/usaco/" target="_blank"><button type="button" class="btn forum"><span class="button">USACO reddit </span></button></a>
+                        </div>
+                    </div>
+                    <p class="purple col">Ask questions and discuss problems with like-minded people</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="purple fleft center wide" style="margin-top: 3vh">Other Resources</h2>
+                <div class="other">
+                    <button class="collapsible">Learn C++</button>
+                    <div class="content">
+                        <p class="description"> <a href="https://code.visualstudio.com/download" target="_blank">Download Visual Studio Code</a>: IDE for C++, install <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank">Code Runner Extension</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank">C++ Extension</a> </p>
+                        <p class="description">
+                            <a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank">Geeks for Geeks</a> and <a  href="https://www.tutorialspoint.com/cplusplus/index.htm" target="_blank">tutorialspoint</a> : Use to learn C++ or as a reference/refresher on syntax.
+                        </p>
+                    </div>
+                    <button class="collapsible">Learn Java</button>
+                    <div class="content">
+                        <p class="description"> <a href="https://www.eclipse.org/downloads/packages/release/neon/2/eclipse-ide-java-developers" target="_blank">Download Eclipse</a>: IDE for Java </p>
+                        <p class="description">
+                            <a href="https://www.geeksforgeeks.org/java/" target="_blank">Geeks for Geeks</a> and <a  href="https://www.tutorialspoint.com/java/index.htm" target="_blank">tutorialspoint</a> : Use to learn Java or as a reference/refresher on syntax.
+                        </p>
+                    </div>
+                    <button class="collapsible">Learn Python</button>
+                    <div class="content">
+                        <p class="description"> <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Download PyCharm</a>: IDE for Python </p>
+                        <p class="description">
+                            <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">Geeks for Geeks</a> and <a  href="https://www.tutorialspoint.com/python/index.htm" target="_blank">tutorialspoint</a> : Use to learn Python or as a reference/refresher on syntax.
+                        </p>
+                    </div>
+                    <button class="collapsible">Additional Competitive Programming Resources</button>
+                    <div class="content">
+                        <p class="description"> <a href="https://codeforces.com" target="_blank">Codeforces</a>: Good for practicing competitive programming in general (including USACO). Allows problem submissions for testing code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="columns">
+                <div class="col1">
+                    <a href="index.html#home"><img src="images/whitelogo.png" class="footerlogo"></a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Navigation</h5>
+                    <a href="index.html" class="footer">Home</a> <br>
+                    <a href="about.html" class="footer">About</a> <br>
+                    <a href="competitions.html" class="footer">Competitions</a> <br>
+                    <a href="calendar.html" class="footer">Calendar</a> <br>
+                    <a href="contact.html" class="footer">Contact Us</a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Contact</h5>
+                    <p class="footer">Room 245 (Mr. Boothe)</p>
+                    <p class="footer">(301) 500 - 7370</p>
+                    <p class="footer"></p>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/rhhsprogramming/" class="fab fa-instagram" id="icon" target="_blank"></a>
+                        <a href="https://www.discord.com/" class="fab fa-discord" id="icon" target="_blank"></a>
+                        <a href="mailto:rhhsprogrammingclub@gmail.com" class="fas fa-envelope-square" id="icon" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright" style="font-size: 14px;">&copy; 2021 RHHS Programming Club</p>
+                <a href="credits.html" class="credits">Code and Design Credits</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/competitions.js"></script>
+    </body>
+</html>

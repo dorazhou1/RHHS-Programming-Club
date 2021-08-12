@@ -1,0 +1,12 @@
+h2.credits {
+    padding-top: 10vh;
+}
+div.credits{
+    background-color: white;
+    padding: 5vh 12vw;
+    height: 100vh;
+}
+p.credits, h4.credits {
+    text-align: left;
+    padding: inherit;
+}

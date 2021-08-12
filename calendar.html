@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar | RHHS Programming Club</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/calendar.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="imports/parallax.js-1.5.0/parallax.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/navbar.js"></script>
+        <link href='imports/fullcalendar-5.8.0/lib/main.css' rel='stylesheet' />
+        <script src='imports/fullcalendar-5.8.0/lib/main.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@5.3.0/main.min.js"></script>
+    </head>
+    <body onload='slideIn("top")'>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle menubtn" data-toggle="collapse" data-target="#myNavbar">
+                    <img src="images/menuicon.png" alt="Open Menu" width="30px">
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="padding: 5px;">
+                    <img src="images/whitelogo.png" class="navlogo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="competitions.html">COMPETITIONS</a></li>
+                        <li><a href="calendar.html">CALENDAR</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header-->
+        <div class="home parallax" data-parallax="scroll" data-image-src="images/gradients/competitionsblob.png" id="home">
+            <div id="top">
+                <h1 class="title white">Calendar</h1>
+            </div>
+        </div>
+        <div class= "calendarContainer">
+            <div id='calendar'></div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="columns">
+                <div class="col1">
+                    <a href="index.html#home"><img src="images/whitelogo.png" class="footerlogo"></a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Navigation</h5>
+                    <a href="index.html" class="footer">Home</a> <br>
+                    <a href="about.html" class="footer">About</a> <br>
+                    <a href="competitions.html" class="footer">Competitions</a> <br>
+                    <a href="calendar.html" class="footer">Calendar</a> <br>
+                    <a href="contact.html" class="footer">Contact Us</a>
+                </div>
+                <div class="col2">
+                    <h5 class="title">Contact</h5>
+                    <p class="footer">Room 245 (Mr. Boothe)</p>
+                    <p class="footer">(301) 500 - 7370</p>
+                    <p class="footer"></p>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/rhhsprogramming/" class="fab fa-instagram" id="icon" target="_blank"></a>
+                        <a href="https://www.discord.com/" class="fab fa-discord" id="icon" target="_blank"></a>
+                        <a href="mailto:rhhsprogrammingclub@gmail.com" class="fas fa-envelope-square" id="icon" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright" style="font-size: 14px;">&copy; 2021 RHHS Programming Club</p>
+                <a href="credits.html" class="credits">Code and Design Credits</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/calendar.js"></script>
+    </body>
+</html>

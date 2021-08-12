@@ -1,0 +1,85 @@
+div.contact{
+    width: 100%;
+    background-color: white;
+    padding: 5vh 10vw;
+    float: left;
+}
+.form {
+    max-width: 700px;
+    padding: 0vw;
+    margin: auto;
+    width:100%;
+}
+label{
+    margin:10px 10px 0;
+    font-family: Raleway, sans-serif;
+    color: #21075F;
+}
+#name,#email,
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+    float: left;
+    
+	font-family: Montserrat, sans-serif;
+}
+.submit{
+	background-color: #B5179E;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+    font-family: Raleway, sans-serif;
+	border-radius: 10px;
+	margin: 10px auto;
+	vertical-align: text-top;
+    position: relative;
+    color:white;
+    border: 3px solid #B5179E;
+}
+.submit:hover{
+    background-color: #90137E;
+    color:white;
+    border: 3px solid #90137E;
+}
+
+.message {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+	height: 100px;
+	font-family: Montserrat, sans-serif;
+}
+div.thanks {
+    width:70%;
+    margin:auto;
+    text-align: center;
+    padding: 50px 0;
+    color:white;
+}
+p.thanks {
+    font-size: 5vh;
+}
+i {
+    font-size: 10vh;
+}
+.alert{
+    color: red;
+    margin: auto;
+    padding: 0 12px;
+}
+.formcontainer {
+    float: left;
+    width: 100%;
+    padding: 0 0 10vh 0;
+}

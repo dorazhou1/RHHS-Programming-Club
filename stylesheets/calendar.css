@@ -1,0 +1,38 @@
+/*General*/
+h1.title{
+    text-align: center;
+}
+p{
+    font-size: 18px;
+}
+.purple{
+    color: #7209B7;
+}
+.white{
+    color: white;
+}
+.fleft{
+    float: left;
+}
+/*Home*/
+.home{
+    height: 100vh;
+    padding:10vh 0;
+    z-index: 100;
+}
+h1.title {
+    text-align: center;
+}
+/*Calendar*/
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+}
+div.calendarContainer{
+    float: left;
+    width:100%;
+    padding: 5vh max(10vw, calc(50vw - 450px));
+    background: #FFFFFF;    
+    text-align: center;
+}
